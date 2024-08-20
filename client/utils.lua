@@ -28,7 +28,7 @@ function utils.raycastFromCamera(flag)
 end
 
 function utils.getTexture()
-    return lib.requestStreamedTextureDict('shared'), 'emptydot_32'
+    return lib.requestStreamedTextureDict('monke'), 'emptydot_32'
 end
 
 -- SetDrawOrigin is limited to 32 calls per frame. Set as 0 to disable.
@@ -37,7 +37,7 @@ local SetDrawOrigin = SetDrawOrigin
 local DrawSprite = DrawSprite
 local ClearDrawOrigin = ClearDrawOrigin
 local colour = vector(155, 155, 155, 175)
-local hover = vector(98, 135, 236, 255)
+local hover = vector(9, 146, 104, 255)
 local currentZones = {}
 local previousZones = {}
 local drawZones = {}

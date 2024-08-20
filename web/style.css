@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --color-default: #cfd2da;
+  --color-default: #47ad8e;
   --color-hover: white;
 }
 
+
+.cls-1{
+  fill:#47ad8e;
+  transform: translate(-0.65,-.065);
+  opacity:0.75;
+  }
+  
 body {
   visibility: hidden;
   user-select: none;
@@ -22,70 +29,77 @@ p {
   font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 40;
 }
 
+#eyeSvg {
+ fill: #AAAAAA;
+ stroke: #4F4E4E;
+ transition: .15s;
+}
+
 #eye {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 22pt;
-  fill: black;
 }
 
 .eye-hover {
-  fill: var(--color-default);
+  fill: var(--color-default)!important;
+  stroke: #47ad8e!important;
+  transition: .15s;
 }
 
 #options-wrapper {
   position: absolute;
   top: calc(48.4%);
   left: calc(50% + 18pt);
+
 }
 
 .option-container {
-  color: var(--color-default);
+  color: rgba(255,255,255,0.5);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   font-family: "Nunito";
-  background: linear-gradient(
-    90deg,
-    rgba(20, 20, 20, 0.7) 0%,
-    rgba(20, 20, 20, 0.6) 66%,
-    rgba(47, 48, 53, 0) 100%
-  );
-  font-size: 11pt;
+  background: rgba(23,23,23,0.9);
+  font-size: 14px;
+  border: solid 2px;
+  border-color:  rgba(29,29,29,0.6);
   line-height: 22pt;
   vertical-align: middle;
   margin: 2pt;
   transition: 300ms;
   transform-origin: left top;
+  border-radius: 10px;
   scale: 1;
-  height: 22pt;
-  width: 150pt;
+  min-width: 140pt;
+  padding: 5px;
   top: 0;
+  height: 25px;
+  transition: 0.3s ease-in-out;
 }
 
 .option-container:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(30, 30, 30, 0.7) 0%,
-    rgba(30, 30, 30, 0.6) 66%,
-    rgba(57, 58, 63, 0) 100%
-  );
+  background-color: rgba(71,173,142,0.5);
   transform-origin: left top;
+  border-color:  rgba(71,173,142,0.3);
   color: var(--color-hover);
-  margin-left: 4pt;
+  transition: 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(71,173,142, 1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(71,173,142, 1);
+box-shadow: 0px 0px 8px 0px rgba(71,173,142, .5);
 }
 
 .option-icon {
-  font-size: 12pt;
+  font-size: 18px;
   line-height: 22pt;
   width: 14pt;
   margin: 5pt;
-  color: var(--color-default);
+  color: #47ad8e;
 }
 
 .option-label {
-  font-weight: 500;
+  font-weight: 600;
 }
